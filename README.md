@@ -9,7 +9,9 @@ FE_SOURCE_GIT="https://github.com/bokobox/animap-web.git"
 FE_BRANCH="develop" //<~~~~ branch name
 FE_PROJECT_NAME="animap-web"
 FE_BUILD_FOLDER="animap-web\build"
-FE_BUILD_COMMAND="npm run build:dev"
+
+FE_BUILD_COMMAND="npm run build:dev" //<~~~~ BUILD COMMAND
+
 
 BE_SOURCE_GIT="https://github.com/bokobox/Nft.Platform.Static.git"
 BE_BRANCH="dev" //<~~~~ branch name
