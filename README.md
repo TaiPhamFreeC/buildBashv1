@@ -1,6 +1,5 @@
 # buildBashv1
-open git bash
-enter `./build.sh` to run build
+open git bash, enter `./build.sh` to run build
 
 # first setup
 ```
