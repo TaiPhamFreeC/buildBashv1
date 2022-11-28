@@ -1,7 +1,22 @@
 # buildBashv1
+
+# Install
+using to create PR from terminal Github.cli
+basic install find here: https://github.com/cli/cli#installation
+
+## window install
+1. open `cmd`.
+2. enter `winget install --id GitHub.cli`.
+3. success, check your install enter `gh --version`.
+## window github login
+1. open `cmd`.
+2. enter `gh auth login` to login.
+3. ...
+
+# How to run
 open git bash, enter `./build.sh` to run build
 
-# first setup
+# Configuations:
 ```js
 PR_VERSION=v1.0.33-dev //<~~~~ version to build
 

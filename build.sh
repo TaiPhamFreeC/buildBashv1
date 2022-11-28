@@ -92,6 +92,8 @@ git status
 git add --all
 git checkout -b $PR_VERSION
 git commit -m $PR_VERSION
+git push --set-upstream origin $PR_VERSION
+gh pr create -w
 git checkout $BE_BRANCH
 cd ../
 echo -e "${RED}[msg]${NC} BRANCH_PR: create branch $PR_VERSION success"
