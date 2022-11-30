@@ -45,6 +45,9 @@ else
 fi
 
 # ========= Check AND BUILD FE ========= #
+echo -e "${RED}[msg]${NC} build: copy .env files"
+cp -TRv env $FE_PROJECT_NAME
+
 echo -e "${RED}[msg]${NC} move: go to FE source"
 cd $FE_PROJECT_NAME
 git status
@@ -54,9 +57,6 @@ git pull origin $FE_BRANCH
 git reset --hard origin/$FE_BRANCH
 
 echo -e "${RED}[msg]${NC} install: start install node_module FE project ..."
-# create skip file fix bug react build
-# add file .env
-echo 'SKIP_PREFLIGHT_CHECK=true' > .env
 npm install
 
 # TODO: add file .env.development for react project
@@ -90,10 +90,10 @@ echo -e "${RED}[msg]${NC} BRANCH_PR: create branch and PR"
 cd $BE_PROJECT_NAME
 git status
 git add --all
-git checkout -b $PR_VERSION
-git commit -m $PR_VERSION
-git push --set-upstream origin $PR_VERSION
+git checkout -b ${1-$PR_VERSION}
+git commit -m ${1-$PR_VERSION}
+git push --set-upstream origin ${1-$PR_VERSION}
 gh pr create -w -B $BE_BRANCH
 git checkout $BE_BRANCH
 cd ../
-echo -e "${RED}[msg]${NC} BRANCH_PR: create branch $PR_VERSION success"
+echo -e "${RED}[msg]${NC} BRANCH_PR: create branch ${1-$PR_VERSION} success"

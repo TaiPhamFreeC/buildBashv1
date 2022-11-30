@@ -14,7 +14,9 @@ basic install find here: https://github.com/cli/cli#installation
 3. ...
 
 # How to run
-open git bash, enter `./build.sh` to run build
+- open git bash, 
+- enter `./build.sh [version]` to run build,
+- ex: `./build.sh v1.0.33-dev`, `./build.sh v1.0.44-dev`
 
 # Configuations:
 ```js
