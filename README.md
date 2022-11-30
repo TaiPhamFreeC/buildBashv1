@@ -13,6 +13,10 @@ basic install find here: https://github.com/cli/cli#installation
 2. enter `gh auth login` to login.
 3. ...
 
+## copy ENV files to folder env
+- goto this link https://earlyworks.atlassian.net/wiki/spaces/NPD/pages/37683201/FE
+- copy file `.env.development` to folder `env/.env.development`.
+
 # How to run
 - open git bash, 
 - enter `./build.sh [version]` to run build,
