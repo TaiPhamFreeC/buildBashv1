@@ -4,22 +4,22 @@
 using to create PR from terminal Github.cli
 basic install find here: https://github.com/cli/cli#installation
 
-## window install
+## Install github.cli for window:
 1. open `cmd`.
 2. enter `winget install --id GitHub.cli`.
 3. success, check your install enter `gh --version`.
-## window github login
+## Github login on window:
 1. open `cmd`.
 2. enter `gh auth login` to login.
 3. ...
 
-## copy ENV files to folder env
+## Copy env files to folder env:
 - goto this link https://earlyworks.atlassian.net/wiki/spaces/NPD/pages/37683201/FE
 - copy file `.env.development` to folder `env/.env.development`.
 
 # How to run
 - open git bash, 
-- enter `./build.sh [version]` to run build,
+- enter `./build.sh [version]` to run build and deploy,
 - ex: `./build.sh v1.0.33-dev`, `./build.sh v1.0.44-dev`
 
 # Configuations:
